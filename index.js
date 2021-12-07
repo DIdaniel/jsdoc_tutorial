@@ -1,3 +1,5 @@
+// https://www.youtube.com/watch?v=lTCadytiCNs // 38:05
+
 // @ts-check
 
 /**
@@ -38,3 +40,51 @@ const calculatePetAge = (current, yearOfBirth) => {
 };
 
 console.log(calculatePetAge(2021, 2019));
+
+//////////////////////////////////////////
+/**
+ * @typedef {Object} Dog
+ * @property {number} id
+ * @property {string} name
+ * @property {number | string} age
+ * @property {boolean} isMale -gender
+ */
+
+/**
+ * @type {Dog}
+ */
+const dog = {
+  id: 1,
+  name: "Bean",
+  age: 2,
+  isMale: true,
+};
+////////////////////////////////////////////
+
+/**
+ * Class to create a new pet owner
+ */
+class Owner {
+  /**
+   *
+   * @param {Object} ownerDetail
+   */
+  constructor(ownerDetail) {
+    /**
+     * @property {string} name pet owner name
+     */
+    this.name = ownerDetail.name;
+    /**
+     * @property {number} age pet owner age
+     */
+    this.age = ownerDetail.age;
+  }
+
+  /**
+   * @property {Function} printOwner print out owner information
+   * @return {void}
+   */
+  printOwner() {
+    console.log(`Owner's name is ${this.name} and her age is ${this.age}`);
+  }
+}
