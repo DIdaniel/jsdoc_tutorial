@@ -1,6 +1,7 @@
-// https://www.youtube.com/watch?v=lTCadytiCNs // 38:05
+// https://www.youtube.com/watch?v=lTCadytiCNs // 47:54
 
 // @ts-check
+const { caltotal } = require("./simpleModule");
 
 /**
  * Pet name
@@ -89,6 +90,10 @@ class Owner {
   }
 }
 
+/**
+ * Link to Owner class
+ * See {@link Owner}
+ */
 const owner1 = new Owner({
   name: "Kelly",
   age: 18,
@@ -96,4 +101,6 @@ const owner1 = new Owner({
 
 owner1.printOwner();
 
-//////////////
+////////Module//////////
+
+console.log(caltotal(19, 5));
