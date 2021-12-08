@@ -88,3 +88,12 @@ class Owner {
     console.log(`Owner's name is ${this.name} and her age is ${this.age}`);
   }
 }
+
+const owner1 = new Owner({
+  name: "Kelly",
+  age: 18,
+});
+
+owner1.printOwner();
+
+//////////////
